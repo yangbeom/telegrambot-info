@@ -41,6 +41,24 @@ inline메세지는 다음과 같은 JSON 형식으로 받게 됩니다.
                                           'query': (string), 
                                           'id': (string)}}
 
+사용자가 location을 전송 했을때는 다음과 같은 JSON 형식으로 받게 됩니다.
+
+.. code-block:: python
+
+    {'message': {'location': {'longitude': (int), 
+                              'latitude': (int)}, 
+                 'chat': {'first_name': (string), 
+                          'id': (int), 
+                          'type': (string), 
+                          'username': (stirng)}, 
+                 'date': (int), 
+                 'from': {'first_name': (string), 
+                          'id': (int), 
+                          'username': (string)}, 
+                 'message_id': (int)}, 
+     'update_id': (int)}
+
+
 Bot을 block한 사용자에게 메세지를 보낼때
 ----------------------------------------
 
